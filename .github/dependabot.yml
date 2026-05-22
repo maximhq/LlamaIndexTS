@@ -1,0 +1,441 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /apps/next
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e/examples/cloudflare-hono
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e/examples/cloudflare-worker-agent
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e/examples/llama-parse-browser
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e/examples/nextjs-agent
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e/examples/nextjs-edge-runtime
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e/examples/nextjs-node-runtime
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e/examples/waku-query-engine
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /e2e
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /examples
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /examples/readers
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /examples/vector-store/azure
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /examples/vector-store/pg
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/autotool/examples/01_node
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/autotool/examples/02_nextjs
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/autotool
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cloud/api
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cloud
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/cloud/reader
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/community
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/agent
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/chat-engine
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/data-structs
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/decorator
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/embeddings
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/global
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/indices
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/llms
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/memory
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/node-parser
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/objects
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/postprocessor
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/prompts
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/query-engine
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/response-synthesizers
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/retriever
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/schema
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/storage/chat-store
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/storage/doc-store
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/storage/index-store
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/storage/kv-store
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/tests
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/tools
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/utils
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/vector-store
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/core/workflow
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/env/multi-model
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/env
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/experimental/examples
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/experimental
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/llamaindex
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/llamaindex/tests
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/node-parser/code
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/node-parser/html
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/node-parser
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/anthropic
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/clip
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/deepinfra
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/groq
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/huggingface
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/ollama
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/openai
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/portkey-ai
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/replicate
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/vercel
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/providers/vllm
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/assembly-ai
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/cosmosdb
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/csv
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/directory
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/discord
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/docx
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/html
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/image
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/json
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/markdown
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/mongo
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/notion
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/obsidian
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/pdf
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/readers/text
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/wasm-tools
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /packages/workflow
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /unit
+    schedule:
+      interval: weekly
