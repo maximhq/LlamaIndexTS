@@ -7,18 +7,29 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+permissions:
+  contents: read
+
 jobs:
   release:
+    permissions:
+      contents: write  # for changesets/action to push to the repo
+      pull-requests: write  # for changesets/action to create PRs
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@ab7a9404c0f3da075243ca237b5fac12c98deaa5 # v2.19.3
+        with:
+          egress-policy: audit
 
-      - uses: pnpm/action-setup@v4
+      - name: Checkout Repo
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - uses: step-security/action-setup@0ad50dc56a23060fa78b14cfcf0677c4e14b42bc # v5.0.0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version-file: ".nvmrc"
           cache: "pnpm"
@@ -44,7 +55,7 @@ jobs:
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
-        uses: changesets/action@v1
+        uses: step-security/changeset-action@4ec991f6d4d311458205f6954cf513f63efe15a3 # v1.7.0
         with:
           commit: Release ${{ steps.get-changeset-status.outputs.new-version }}
           title: Release ${{ steps.get-changeset-status.outputs.new-version }}
@@ -63,7 +74,7 @@ jobs:
 
       - name: Commit lock file
         continue-on-error: true
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: step-security/git-auto-commit-action@749bc1cc775376092cc4227ba537137f445ca7c3 # v7.1.1
         with:
           commit_message: "chore: update lock file"
           branch: changeset-release/main
